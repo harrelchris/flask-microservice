@@ -24,6 +24,8 @@ def create_app() -> Flask:
 
 def register_blueprints(app: Flask) -> Flask:
     from index.urls import bp as index_bp
+    from users.urls import bp as users_bp
 
     app.register_blueprint(index_bp)
+    app.register_blueprint(users_bp)
     return app
