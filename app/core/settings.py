@@ -3,7 +3,7 @@ import pathlib
 
 import dotenv
 
-BASE_DIR = pathlib.Path(__file__).resolve().parent
+BASE_DIR = pathlib.Path(__file__).resolve().parent.parent
 
 dotenv.load_dotenv(dotenv_path=BASE_DIR.parent / ".env")
 
@@ -15,7 +15,7 @@ STATIC_FOLDER = BASE_DIR / "static"
 
 TEMPLATE_FOLDER = BASE_DIR / "templates"
 
-STATIC_URL_PATH = None
+STATIC_URL_PATH = "/static"
 
 STATIC_HOST = None
 

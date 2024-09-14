@@ -23,7 +23,7 @@ def create_app() -> Flask:
 
 
 def register_blueprints(app: Flask) -> Flask:
-    from src.index.urls import bp as index_bp
+    from index.urls import bp as index_bp
 
     app.register_blueprint(index_bp)
     return app
